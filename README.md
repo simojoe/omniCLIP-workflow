@@ -14,7 +14,7 @@ identifiers of the datasets used are the following :
 
 # Usage
 
-##1. Snakemake installation
+## 1. Snakemake installation
 To run the snakemake workflow, we recommend to usage of a conda environment for
 the snakemake installation. conda will also be needed during the execution of
 the workflow. Make sure it is [installed](https://docs.conda.io/projects/conda/en/latest/user-guide/install/)
@@ -32,10 +32,10 @@ To use the environment, activate it in the following way.
 $ conda activate smake
 ```
 
-##2. Get the workflow
+## 2. Get the workflow
 Get a copy of this workflow by cloning and or downloading its latest release.
 
-##3. Run the workflow
+## 3. Run the workflow
 To run the workflow as is, use the following command in the main directory.
 
 ```
