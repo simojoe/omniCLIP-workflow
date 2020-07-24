@@ -1,0 +1,5 @@
+channels:
+  - defaults
+  - bioconda
+dependencies:
+  - star =2.7

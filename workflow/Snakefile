@@ -1,0 +1,23 @@
+configfile: "config/config.yaml"
+
+include: "rules/common.smk"
+include: "rules/download.smk"
+include: "rules/rnaseq.smk"
+include: "rules/omniCLIP.smk"
+
+
+def all_input(wildcards):
+    """Return the path for all output files."""
+    files = list()
+
+    # Generate all analysis
+    analysis = pd.read_csv(config['analysis'], sep='\t')
+    for i, row in analysis.iterrows():
+        files.append(config['paths']['omniCLIP_output'].format(
+            rbp=row.fg_sample, bg=row.bg_sample))
+
+    return files
+
+
+rule all:
+    input: all_input

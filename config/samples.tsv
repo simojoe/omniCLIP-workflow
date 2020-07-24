@@ -1,0 +1,7 @@
+sample_id	sample	SRRid	accession	layout
+mei2_r1	mei2	SRR6872118	SRX3825737	PE
+mei2_r2	mei2	SRR7107408	SRX4035645	PE
+msa1_r1	msa1	SRR6872120	SRX3825738	PE
+msa1_r2	msa1	SRR7107409	SRX4035646	PE
+background_1	background	SRR11492045	SRX8067986	SE
+background_2	background	SRR11492043	SRX8067984	SE

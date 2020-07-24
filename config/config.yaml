@@ -1,0 +1,28 @@
+samples: config/samples.tsv
+analysis: config/analysis.tsv
+
+resources:
+  species:
+    name: "Schizosaccharomyces pombe"
+    chrs: ["I", "II", "III", "MT"]
+  ref:
+    gff: "ftp://ftp.ensemblgenomes.org/pub/fungi/release-47/gff3/schizosaccharomyces_pombe/Schizosaccharomyces_pombe.ASM294v2.47.chr.gff3.gz"
+    chr_fa: "ftp://ftp.ensemblgenomes.org/pub/fungi/release-47/fasta/schizosaccharomyces_pombe/dna/Schizosaccharomyces_pombe.ASM294v2.dna.chromosome.{chr}.fa.gz"
+    genome_fa: "ftp://ftp.ensemblgenomes.org/pub/fungi/release-47/fasta/schizosaccharomyces_pombe/dna/Schizosaccharomyces_pombe.ASM294v2.dna.toplevel.fa.gz"
+  software:
+    omniCLIP: "https://github.com/simojoe/omniCLIP.git"
+    omniCLIP_commit: "a4256ebbbac09772f0da7dfeafed41196960b816"
+
+params:
+  STAR:
+    CLIP_read_length: 74
+  omniCLIP:
+    gene_features: ["gene", "ncRNA", "pseudogene", "snoRNA", "snRNA"]
+
+paths:
+  BAM_files: "results/BAM/{sample}/Aligned.sortedByCoord.out.bam"
+  genome_dir: "data/references/genome_dir"
+  chr: "data/references/genome_dir/{chr}.fa.gz"
+  omniCLIP_dir: "git_repos/omniCLIP"
+  omniCLIP_output: "results/omniCLIP/{rbp}_{bg}"
+  STAR_index: "data/references/STAR_index"
