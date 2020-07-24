@@ -11,7 +11,7 @@ resources:
     genome_fa: "ftp://ftp.ensemblgenomes.org/pub/fungi/release-47/fasta/schizosaccharomyces_pombe/dna/Schizosaccharomyces_pombe.ASM294v2.dna.toplevel.fa.gz"
   software:
     omniCLIP: "https://github.com/simojoe/omniCLIP.git"
-    omniCLIP_commit: "a4256ebbbac09772f0da7dfeafed41196960b816"
+    omniCLIP_commit: "21b8249cc6cf3b04bb5db698e6b86bddd219560a"
 
 params:
   STAR:

@@ -1,1 +1,7 @@
 *.pyc
+
+# Folders
+data/
+git_repos/
+results/
+.snakemake/
